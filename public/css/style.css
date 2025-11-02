@@ -1,0 +1,112 @@
+/* ===== style.css ===== */
+/* 
+   File ini digunakan untuk mengatur tampilan halaman index.blade.php 
+   (daftar data mahasiswa). 
+   Semua elemen seperti body, tabel, tombol, dan notifikasi diatur di sini.
+*/
+
+/* ===== Tampilan Dasar Halaman ===== */
+body {
+    background-color: #111827; /* Warna latar belakang abu gelap */
+    color: #fff;               /* Warna teks putih agar kontras */
+    font-family: Arial, sans-serif; /* Jenis font */
+    padding: 40px;             /* Jarak isi dari tepi halaman */
+    margin: 0;                 /* Hilangkan margin default browser */
+}
+
+/* ===== Judul Halaman ===== */
+h1 {
+    font-size: 28px;           /* Ukuran font besar */
+    font-weight: bold;         /* Tebal */
+    margin-bottom: 20px;       /* Jarak bawah agar tidak terlalu rapat */
+    text-align: left;          /* Rata kiri */
+}
+
+/* ===== Tombol Umum ===== */
+.btn {
+    padding: 8px 14px;         /* Ruang dalam tombol */
+    border-radius: 5px;        /* Sudut tombol agak membulat */
+    font-weight: bold;         /* Teks tombol tebal */
+    text-decoration: none;     /* Hilangkan garis bawah */
+    display: inline-block;     /* Supaya bisa diberi padding & margin */
+    transition: background 0.3s; /* Efek transisi saat hover */
+}
+
+/* ===== Warna & Efek Tombol ===== */
+
+/* Tombol Tambah Data */
+.btn-tambah {
+    background-color: #2563EB; /* Biru utama */
+    color: white;
+}
+.btn-tambah:hover {
+    background-color: #1E40AF; /* Biru lebih gelap saat hover */
+}
+
+/* Tombol Edit Data */
+.btn-edit {
+    background-color: #FACC15; /* Kuning cerah */
+    color: black;
+}
+.btn-edit:hover {
+    background-color: #CA8A04; /* Kuning tua saat hover */
+}
+
+/* Tombol Hapus Data */
+.btn-hapus {
+    background-color: #DC2626; /* Merah cerah */
+    color: white;
+}
+.btn-hapus:hover {
+    background-color: #991B1B; /* Merah tua saat hover */
+}
+
+/* ===== Notifikasi Sukses ===== */
+.alert-success {
+    background-color: #16A34A; /* Hijau untuk pesan sukses */
+    padding: 10px 15px;        /* Ruang dalam notifikasi */
+    border-radius: 6px;        /* Sudut membulat */
+    margin-top: 15px;          /* Jarak atas dari elemen sebelumnya */
+}
+
+/* ===== Struktur & Tampilan Tabel ===== */
+.table {
+    width: 100%;
+    border-collapse: collapse; /* Supaya garis antar kolom rapat dan sejajar */
+    margin-top: 20px; /* Jarak dari elemen atas */
+    background-color: #1f2937; /* Warna latar tabel */
+    border-radius: 8px; /* Sudut tabel membulat */
+    overflow: hidden; /* Supaya radius rapi di tepi */
+}
+
+/* Header tabel */
+.table th {
+    background-color: #111827; /* Warna header tabel lebih gelap */
+    color: #fff; /* Warna teks putih */
+    text-align: left; /* Rata kiri */
+    padding: 12px 15px; /* Ruang di dalam sel */
+    font-weight: bold; /* Teks tebal */
+    border-bottom: 2px solid #2563eb; /* Garis bawah biru */
+}
+
+/* Sel data tabel */
+.table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #374151; /* Garis pemisah antar baris */
+    color: #e5e7eb; /* Warna teks abu terang */
+}
+
+/* Warna selang-seling antar baris agar mudah dibaca */
+.table tr:nth-child(even) {
+    background-color: #1e293b;
+}
+
+/* Efek hover saat baris disentuh */
+.table tr:hover {
+    background-color: #374151;
+}
+
+/* Tombol di kolom Aksi sejajar */
+.table td form {
+    display: inline;
+}
